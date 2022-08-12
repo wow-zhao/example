@@ -3,12 +3,16 @@
 ### environment
    esp-idf 4.4 + Vscode(espressif IDF) 
 ### hardware
-   board:   Ai thinker esp32-cam  
-   camera:  ov2640
+   **board:**   Ai thinker esp32-cam  
+   **camera:**  ov2640
+### what this project can do?
+   * using your PC or phone with browser(HTTP) to config the ESP32 wifi station mode.
+   * using your PC or phone with browser(HTTP) to visit the camera.
+   * using your PC or phone with browser(HTTP) to control the ESP32 (write by you).
 ### The workflow of this project is as follows  
-   a ) ESP32 reboot, open a wifi with softAP/station coexistence mode.  
-   b ) User uses PC or phone connect to AP open by ESP32. In this project, the AP ssid is "mywifissid", password is "123456789", which can be changed in WIFI_StaAp.c.  
-   c ) User uses browser to access 192.168.4.1/{command}, in which {command} can be "jpeg", "stream", "predict", "wifi".  
+   **a )** ESP32 reboot, open a wifi with softAP/station coexistence mode.  
+   **b )** User uses PC or phone connect to AP open by ESP32. In this project, the AP ssid is "mywifissid", password is "123456789", which can be changed in WIFI_StaAp.c.  
+   **c )** User uses browser to access 192.168.4.1/{command}, in which {command} can be "jpeg", "stream", "predict", "wifi".  
        *if you want to use command "predict", you should use command "wifi" to help ESP32 connect to a wifi first.*
     
  command  | query  | function | example
