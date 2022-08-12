@@ -105,7 +105,7 @@ void http_predict_task(void *pvParameters)
 //    char local_response_buffer[MAX_HTTP_OUTPUT_BUFFER] = {0};
     
     esp_http_client_config_t config = {
-        .url = "http://39.106.89.175:80/predict/",
+        .url = "http://39.106.89.176/predict/",
         .query = "esp",
         .method = HTTP_METHOD_POST,
         .event_handler = _http_event_handler,
