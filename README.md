@@ -18,10 +18,16 @@
  stream  | none | get a video stream | 192.168.4.1/stream
  predict  | none | Upload current image(jpeg) to server url | 192.168.4.1/predict
 
-## 2. How to use (Vscode with espressif IDF example)
+## 2. How to use 
+### same environment with me
    * download the Project first.
-   * open a new project with sample_project template.
-   * copy the main
-
-
+   * open a new project with sample_project template, copy all the files into the new project.
+   * open ov2640.c and check the i/o #define.
+   * build and flash the project.
+### other environment
+   * download the Project first.
+   * help yourself.
+### other tips
+   * To use camera, you should tick the box of *"ESP32-specific -->  □Support for external, SPI-connected RAM"* in the menuconfig, and *"Set RAM clock speed"* in 80MHz. Also change *"Serial flasher config --> Flash SPI speed"* into 80MHz.
+   * The file "ov2640.c" and "ov2640.h" can not only use in ov2640 camera. These codes is changed from github/espressif/esp32-camera. If you want to use other camera, don't forget check the *"Camera configuration"* in menuconfig.
 
